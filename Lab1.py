@@ -140,3 +140,71 @@ print(li[-4])
 #2 and -2 will be same
 print(li[2])
 print(li[-2])
+
+###13. List Slice
+#Lists can be sliced like strings and other sequences. The syntax of list slices is easy
+li = ['Green', 'Pink', 'Black', 'Red', 'Yellow', 'Blue', 'Lavender', 'Brown']
+print(li[4:6]) #Last one e.g. 6 not included
+print(li[0:-7]) #Start from 0 and on opposite side it will cpunt till -7 and print Green
+
+###14. Conditional Statements Python supports the usual logical conditions from mathematics 
+# a == b 
+# a != b 
+# a < b 
+# a <= b 
+# a > b 
+# a >= b 
+
+# == 
+print("For ==")
+a = int(input("a : "))
+b = int(input("b : "))
+if a == b:
+    print(a, "is Equal to", b)
+else:
+    print(a, "is NOT Equal to", b)
+
+# != 
+print("For !=")
+a = int(input("a : "))
+b = int(input("b : "))
+if a != b:
+    print(a, "is Not Equal to", b)
+else:
+    print(a, "is Equal to", b)
+
+# < 
+print("For <")
+a = int(input("a : "))
+b = int(input("b : "))
+if a < b:
+    print(a, "is Less than", b)
+else:
+    print(a, "is NOT Less than", b)
+
+# <= 
+print("For <=")
+a = int(input("a : "))
+b = int(input("b : "))
+if a <= b:
+    print(a, "is Less than or Equal to", b)
+else:
+    print(a, "is Greater than", b)
+
+# > 
+print("For >")
+a = int(input("a : "))
+b = int(input("b : "))
+if a > b:
+    print(a, "is Greater than", b)
+else:
+    print(a, "is NOT Greater than", b)
+
+# >= 
+print("For >=")
+a = int(input("a : "))
+b = int(input("b : "))
+if a >= b:
+    print(a, "is Greater than or Equal to", b)
+else:
+    print(a, "is Less than", b)
