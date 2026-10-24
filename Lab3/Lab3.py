@@ -68,6 +68,17 @@ while b <= 50:
     print()
     a, b = b, a + b
 
+#9.1
+for i in range(1, 51):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
+
 #Q10
 row = int(input("Enter number of rows: "))
 column = int(input("Enter number of columns: "))
