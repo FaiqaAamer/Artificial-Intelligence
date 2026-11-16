@@ -1,8 +1,8 @@
 ####1.BFS on given graph
-from collections import deque
+
 
 # Graph represented using adjacency list
-graph = {
+graph1 = {
     0: [1, 4],
     1: [0, 4, 3, 2],
     2: [1, 3],
@@ -10,36 +10,41 @@ graph = {
     4: [0, 1, 3]
 }
 
+graph2 = {
+    0: [1, 2],
+    1: [2],
+    2: [0, 3],
+    3: [3]
+}
+
 def bfs(graph, start):
-    visited = set()
-    queue = deque()
+    
 
     # Add starting node to queue
-    queue.append(start)
-    visited.add(start)
+    queue=[start]
+    visited=[start]
 
-    print("BFS Traversal:")
+    print("\nBFS Traversal:")
 
     while queue:
         # Remove first element from queue
-        node = queue.popleft()
+        node = queue.pop(0)
 
         print(node, end=" ")
 
         # Visit all neighbours
         for neighbour in graph[node]:
             if neighbour not in visited:
-                visited.add(neighbour)
+                visited.append(neighbour)
                 queue.append(neighbour)
 
 
 # Start BFS from node 0
-bfs(graph, 0)
+bfs(graph1, 0)
+bfs(graph2, 2)
 
 
 ####2.BFS from A to goal G
-from collections import deque
-
 # Tree represented using adjacency list
 tree = {
     'A': ['B', 'F', 'D', 'E'],
@@ -59,37 +64,29 @@ tree = {
 }
 
 def bfs(tree, start, goal):
-    visited = set()
-    queue = deque()
-
-    # Add starting node
-    queue.append(start)
-    visited.add(start)
-
-    print("BFS Search:")
+    queue = [start]
+    visited = [start]
+    print("\nBFS SEARCH:")
 
     while queue:
-        # Remove first node from queue
-        current = queue.popleft()
+        node = queue.pop(0)
+        print(node, end=" ")
 
-        print(current, end=" ")
-
-        # Check if goal is reached
-        if current == goal:
-            print("\nGoal G found!")
+        if node == goal:
+            print("\nGoal found!", node)
             return
 
-        # Add unvisited neighbours
-        for neighbour in tree[current]:
+        for neighbour in tree[node]:
             if neighbour not in visited:
-                visited.add(neighbour)
+                visited.append(neighbour)
                 queue.append(neighbour)
 
-    print("\nGoal not found.")
+    print("\nGoal not found!")
 
-
-# Start BFS from A and search for G
 bfs(tree, 'A', 'G')
+
+
+
 
 
 ####3.implementing priority queue

@@ -8,13 +8,13 @@ if a > 0:
     print("This is a proper comment in Python") #Print a string
 
 ###3. Input/Output
-# txt = input("This is input in python: ")
-# print(txt) #This is output in python
+txt = input("This is input in python: ")
+print(txt) #This is output in python
 
 ###4. Multiple statements on single line
-print("This is first.")
+print("This is first.",end = " ") #end = " " is used to print in same line
 print("This is second.")
-print("Statement1"); print("Statement2") #Ypu can write 2 statements in 1 line like this
+print("Statement1"); print("Statement2") #You can write 2 statements in 1 line like this
 
 a = 1; b = 2; print(a + b)
 
@@ -24,7 +24,7 @@ b = 2
 c = 3
 #Tab indentation
 if a > 0:
-#print("Hello") If you writ like this without tab space it give error as it act like the bracket
+#print("Hello") If you write like this without tab space it give error as it act like the bracket
     print("Tab indentation")
 
 #Single space indentation
@@ -55,7 +55,7 @@ print(type(d))
 #Complex
 a = complex(2 , 4)
 b = 1 - 9j
-c = 4 - 6J
+c = 4 + 6J
 print(type(a))
 print(type(b))
 print(type(c))
@@ -77,7 +77,7 @@ print(type(a))
 ###7. Strings
 #Strings are Immutable
 s1 = "String with double quote"
-s2 = 'String with singlt quote'
+s2 = 'String with single quote'
 #s3 = "String starting with double quote and ending with single quote' #Error: Wrong way to write string
 #s4 = 'String starting with single quote and ending with double quote" #Error: Wrong way to write string
 s5 = "String with single'quote in double quote"
@@ -91,7 +91,7 @@ print(s6)
 print("This is backslash (\\).") #\\
 print("This is tab \t key.") #\t
 print("These are \'Single quotes\'.") #\'
-print("These are \"Single quotes\".") #\"
+print("These are \"Double quotes\".") #\"
 print("This is for new line. \nNew Line.") #\n
 
 ###9. String Indices and Accessing String Elements 
@@ -131,7 +131,7 @@ print(li2)
 print(li3)
 print(li4)
 
-###12. List indeces
+###12. List indices
 li = ["Circle", "Square", "Rectangle", "Triangle"]
 #0 and -4 will be same
 print(li[0])

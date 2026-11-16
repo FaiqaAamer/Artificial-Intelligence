@@ -20,13 +20,13 @@ for i in I:
 print("\nTuple iteration:")
 t = ("Pizza", "Soup", "Cake")
 for i in t:
-    print(t)
+    print(i)
 
 ###5. String iteration with for loop
 print("\nString iteration:")
 t = "Faiqa"
 for i in t:
-    print(t)
+    print(i)
 
 ###6. Iterating by index of sequence
 list = ["Horse", "Sunflower", "Bottle Green"]
